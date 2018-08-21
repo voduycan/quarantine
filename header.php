@@ -7,10 +7,8 @@
 	<!-- Header hook. Don't delete this. -->
 	<?php wp_head(); ?>
 
-
 <!-- Css VIDEO -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style-video.css">
-
 
 <!-- Google Analytics -->
 <script>
