@@ -1,0 +1,127 @@
+#play-video{
+    width: 100%;
+    padding-top: calc(100%/1.77777);
+    position: relative;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+#play-video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@media screen and (min-width: 2000px){
+	#play-video iframe{
+	    width: 2000px;
+    	height: 1125px;
+	}
+}
+#row-video .video-item{
+	display: inline-block;
+	-ms-flex: 0 0 14.285714% ;
+    flex: 0 0 14.285714% ;
+    max-width: 14.285714% ;
+ 	position: relative;
+ 	padding-top: 14.285714%;
+ 	z-index: 1;	
+    
+}
+#row-video .video-item .video-image{
+	position: absolute;
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#row-video .video-item .title{
+	z-index: 2;
+	position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    background-color: rgba(58,58,58, 0.6);
+    background-image: none;
+    background-size: auto;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position: left top;
+}
+#row-video .video-item .title h3{
+	color: white;
+	text-transform: uppercase;
+	margin-top: -20%; 
+	font-family: "Droid Serif", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#row-video .video-item:hover .title{
+	opacity: 1;
+}
+@media screen and (max-width: 2668px){
+	#row-video .video-item{
+		-ms-flex: 0 0 16.66666666% ;
+	    flex: 0 0 16.66666666% ;
+	    max-width: 16.66666666% ;
+	    padding-top: 16.66666666%;
+	}
+}
+@media screen and (max-width: 2319px){
+	#row-video .video-item{
+		-ms-flex: 0 0 20% ;
+	    flex: 0 0 20% ;
+	    max-width: 20% ;
+	    padding-top: 20%;
+	}
+}
+@media screen and (max-width: 1617px){
+	#row-video .video-item{
+		-ms-flex: 0 0 33.3333333% ;
+	    flex: 0 0 33.3333333% ;
+	    max-width: 33.3333333% ;
+	    padding-top: 33.3333333%;
+	}
+}
+@media screen and (max-width: 1268px){
+	#row-video .video-item{
+		-ms-flex: 0 0 50% ;
+	    flex: 0 0 50% ;
+	    max-width: 50% ;
+	    padding-top: 50%;
+	}
+}
+@media screen and (max-width: 616px){
+	#row-video .video-item{
+		-ms-flex: 0 0 100% ;
+	    flex: 0 0 100% ;
+	    max-width: 100% ;
+	    padding-top: 100%;
+	}
+}
+
+#row-video .video-item .video-image .img-background{
+    width: 100%;
+    height: 100%;
+}
+#row-video{
+	line-height: 0;
+	display: flex;
+    flex-wrap: wrap
+}
+#row-video .video-item .play-button{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+
+}
