@@ -4,6 +4,7 @@
     position: relative;
     max-width: 2000px;
     margin: 0 auto;
+    background: black;
 }
 #play-video iframe{
     width: 100%;
