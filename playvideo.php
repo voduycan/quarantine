@@ -15,11 +15,11 @@ get_header();
 	$row = $rows[$i];
 	$row_video = $row['add_url'];
 	$row_title = $row['title'];
-
+	$url_new =  str_replace('?', '?autoplay=1&muted=1', $row_video);
 ?>
 
 <div id="play-video">
-	<?php echo $row_video; ?>
+	<?php echo $url_new; ?>
 	
 </div>
 <div id="play-title">

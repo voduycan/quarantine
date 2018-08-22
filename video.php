@@ -16,7 +16,7 @@ get_header();
 				
 		?>	
 			<div class="video-item">
-				<div class="video-image"><img class="img-background" src="<?php echo $image; ?>"></div>
+				<div class="video-image" style="background-image: url('<?php echo $image; ?>');"></div>
 				<a class="title" href="<?php echo 'play-video?ID='.$num; $num++; ?>">
 					<h3><?php echo $title; ?></h3>
 				</a>
