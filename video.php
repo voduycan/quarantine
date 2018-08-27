@@ -17,7 +17,7 @@ get_header();
 		?>	
 			<div class="video-item">
 				<div class="video-image" style="background-image: url('<?php echo $image; ?>');"></div>
-				<a class="title" href="<?php echo 'play-video?ID='.$num; $num++; ?>">
+				<a class="title" href="<?php echo 'play-video?ID='.$num.'&post='.$post->ID; $num++; ?>">
 					<h3><?php echo $title; ?></h3>
 				</a>
 				<img class="play-button" src="<?php bloginfo('template_url'); ?>/img/play-button.svg">

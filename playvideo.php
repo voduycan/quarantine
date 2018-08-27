@@ -11,11 +11,13 @@ get_header();
 <?php 
 
 	$i =  $_GET['ID'];
-	$rows = get_field('add_video',3781);
+	$post = $_GET['post'];
+	$rows = get_field('add_video',$post);
 	$row = $rows[$i];
 	$row_video = $row['add_url'];
 	$row_title = $row['title'];
 	$url_new =  str_replace('?', '?autoplay=1&muted=1', $row_video);
+
 ?>
 
 <div id="play-video">
